@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohith's Portfolio</title>
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="assets\css\styles.css" />
+    <script
+      src="https://kit.fontawesome.com/2c6faefed4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>undergraduate Student</p>
+          <h1>Hi, I'm <span>Mohith</span><br />Musunuru from Gudiwada</h1>
+        </div>
+      </div>
+    </div>
+    <!----------about--------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src=".\assets\images\DSC_6156.JPG" alt="Profile pic" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hello! I’m mohith musunuru, currently pursuing my B.Tech in
+              Computer Science and Engineering with a specialization in
+              datascience  at SRM Institute of
+              Science and Technology. I’m passionate about exploring the dynamic
+              fields of data science, where I can merge creativity and technology
+              to solve complex problems.<br /><br />
+              My journey in tech has been fueled by a desire to innovate and
+              contribute to real-world applications. Whether it’s diving deep
+              into algorithms or building intuitive, efficient systems, I’m
+              always ready to tackle new challenges. When I’m not coding, you
+              might find me exploring new technologies, brainstorming ideas for
+              projects, or engaging in collaborative efforts to grow my skills
+              and knowledge.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br />Designing Websites</li>
+                <li><span>AIML Developer</span><br />Train AI Models</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2024 - Current</span><br />Student
+              </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2024</span><br />B.Tech CSE(AIML) from SRMIST
+                  Kattankulathur
+                </li>
+                <li>
+                  <span>2022</span><br />Standard XII from Sunbeam Vellore,
+                  Marks - 75%
+                </li>
+                <li>
+                  <span>2019</span><br />Standard X from Sunbeam Vellore, Marks
+                  - 72%
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------certificates--------->
+    <div id="certificates">
+      <div class="container">
+        <h1 class="sub-title">Certificate</h1>
+        <div class="certificate">
+          <img src=".\assets\images\cirteficate c.jpg" alt="Certificate" />
+        </div>
+      </div>
+    </div>
+
+    <!----------portfolio---------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img
+              src=".\assets\images\ChatBot screenshot.jpg"
+              alt="ChatBot"
+            />
+            <div class="layer">
+              <h3>ChatBot Analysis</h3>
+              <p>A website for Chatbot Analysis of sentiments.</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------contact-------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>mohithmusunuru40@gmail.com
+            </p>
+            <div class="social-icons">
+              <a href="https://github.com/Mohithmusunuru"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/mohith-musunuru-a08057330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/.mohith..musunuru._/profilecard/?igsh=MWZ1b25ocHBxZnM3cQ==/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>  
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright mohith musunuru40 <i class="fa-solid fa-heart"></i></p>
+      </div>
+    </div>
+    <button id="goToTopBtn" title="Go to top">
+      <i class="fa-solid fa-up-long"></i>
+    </button>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
